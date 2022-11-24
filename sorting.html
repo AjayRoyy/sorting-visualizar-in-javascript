@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sorting.css">
+    <title>Sorting Visulizer</title>
+</head>
+<body>
+
+    <section class="section1">
+        <nav>
+            <h1>Heat's Sorting Visulizer</h1>
+            <ul class="sorts">
+                <li onclick="generateNewArray()">New Array</li>
+                <li onclick="bubbleSort(arr)">Bubble Sort</li>
+                <li onclick="selectionSort(arr)">Selection Sort</li>
+                <li onclick="insertionSort(arr)">Insertion Sort</li>
+                <li onclick="quickSort(arr,0,arr.length - 1)">Quick Sort</li>
+                <li onclick="mergeSort(arr, 0, arr.length-1)">Merge Sort</li>
+                <li onclick="sort(arr)"> Shell Sort</li>
+            </ul>
+            <ion-icon id="menu-open" name="menu-outline"></ion-icon>
+            <ion-icon id="menu-close" name="close-outline"></ion-icon>
+
+        </nav>
+    </section>
+
+    <section class="section2">
+        <div class="visulisar">
+        </div>
+    </section>
+    
+</body>
+<script src="./sorting.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

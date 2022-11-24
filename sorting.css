@@ -1,0 +1,122 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100vw;
+  background-color: #AB46D2;
+  /* overflow-x: hidden; */
+}
+body .section1 {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+body .section1 nav {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 5px 20px black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 3px solid black; */
+}
+body .section1 nav h1 {
+  font-size: 30px;
+  color: #F9D923;
+  text-shadow: -3px 3px 1px rgb(250, 137, 137), -3px 3px 1px #F9D923, -6px 6px 1px black;
+}
+body .section1 nav ul {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  width: 70%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  /* transition: 0.5s linear; */
+
+}
+body .section1 nav ul li.active 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: block;
+  /* transform: translate(0px);
+  transition: 0.5s linear; */
+}
+body .section1 nav ul li {
+  color: white;
+  background-color: rgb(250, 137, 137);
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgb(250, 137, 137);
+  transform: translate(0px);
+  text-align: center;
+}
+body .section1 nav ul li:hover {
+  background-color: rgb(255, 109, 40);
+  box-shadow: 0px 0px 10px rgb(255, 109, 40);
+  color: black;
+  cursor : pointer;
+
+}
+body .section1 nav #menu-open {
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: none;
+}
+body .section1 nav #menu-close {
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: none;
+}
+
+.visulisar
+{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+  height: 600px;
+  align-items: flex-end;
+} 
+
+.bar
+{
+  background-color: #F9D923;
+  border: 1px solid grey;
+  margin: 0px 1px ;
+  width: 20px;
+  transition: height 0.5s ease-in-out;
+}
+
+@media screen and (max-width : 900px) {
+  body .section1 nav #menu-open
+  {
+    display: block;
+    position: absolute;
+    top: 7%;
+    right: 45%;
+  }
+  body .section1 nav ul li
+  {
+    display: none;
+  }
+
+  body .section1 nav ul
+  {
+    display: grid;
+    grid-template-columns: repeat(3,130px);
+    transform: translate(100px , 100px);
+  }
+}
+
